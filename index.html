@@ -577,9 +577,9 @@
               console.log('🏒 SUBSCRIBER MODE: Initializing from embedded config');
               
               // Initialize career stats in localStorage from embedded config
-              if (EMBEDDED_CONFIG.careerStats && Object.keys(EMBEDDED_CONFIG.careerStats).length > 0) {
-                localStorage.setItem('hockey-scout-career-stats', JSON.stringify(EMBEDDED_CONFIG.careerStats));
-                console.log('📦 Loaded', Object.keys(EMBEDDED_CONFIG.careerStats).length, 'embedded career stat records');
+              if (EMBEDDED_CONFIG.teamSetup?.careerStats && Object.keys(EMBEDDED_CONFIG.teamSetup.careerStats).length > 0) {
+                localStorage.setItem('hockey-scout-career-stats', JSON.stringify(EMBEDDED_CONFIG.teamSetup.careerStats));
+                console.log('📦 Loaded', Object.keys(EMBEDDED_CONFIG.teamSetup.careerStats).length, 'embedded career stat records');
               }
               
               // Don't override myTeamSetup from localStorage in subscriber mode
