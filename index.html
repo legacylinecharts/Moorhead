@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legacy Line Charts v40.9</title>
+    <title>Legacy Line Charts v50.4</title>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -136,67 +136,66 @@
         const EMBEDDED_CONFIG = {
           siteId: 'moorhead-spuds',
           teamSetup: {
-            teamName: 'Moorhead Spuds',
-            logo: 'https://cdn1.sportngin.com/attachments/team/e4a9-151779660/moorhead-spuds-hockey-_1__large_square.png',
-            colors: { primary: '#000000', secondary: '#FF6600' },
-            arena: '',
+            teamName: "Moorhead Spuds",
+            logo: "https://cdn1.sportngin.com/attachments/team/e4a9-151779660/moorhead-spuds-hockey-_1__large_square.png",
+            colors: { primary: "#000000", secondary: "#FF6600" },
+            arena: "",
             careerStats: {
-              "KRAFT_MAS": { "type": "skater", "data": { "gp": 88, "g": 67, "a": 105, "pts": 172, "pim": 56, "plusMinus": 5, "fow": 0, "fol": 0 } },
-              "ZIMMERMAN_ZAC": { "type": "skater", "data": { "gp": 58, "g": 47, "a": 73, "pts": 120, "pim": 14, "plusMinus": 6, "fow": 9, "fol": 6 } },
-              "BERGESON_TYD": { "type": "skater", "data": { "gp": 58, "g": 45, "a": 43, "pts": 88, "pim": 6, "plusMinus": 0, "fow": 11, "fol": 5 } },
-              "CULLEN_BRO": { "type": "skater", "data": { "gp": 86, "g": 40, "a": 37, "pts": 77, "pim": 72, "plusMinus": 0, "fow": 23, "fol": 13 } },
-              "MICKELSON_BRA": { "type": "skater", "data": { "gp": 58, "g": 13, "a": 54, "pts": 67, "pim": 54, "plusMinus": 8, "fow": 0, "fol": 0 } },
-              "HASBARGEN_CAR": { "type": "skater", "data": { "gp": 85, "g": 14, "a": 40, "pts": 54, "pim": 28, "plusMinus": 4, "fow": 12, "fol": 10 } },
-              "CULLEN_MAX": { "type": "skater", "data": { "gp": 31, "g": 11, "a": 17, "pts": 28, "pim": 14, "plusMinus": 3, "fow": 3, "fol": 6 } },
-              "WANNER_EVA": { "type": "skater", "data": { "gp": 31, "g": 10, "a": 11, "pts": 21, "pim": 22, "plusMinus": 6, "fow": 0, "fol": 0 } },
-              "SIMONICH_DRE": { "type": "skater", "data": { "gp": 31, "g": 3, "a": 16, "pts": 19, "pim": 14, "plusMinus": 0, "fow": 0, "fol": 0 } },
-              "DEVIG_ZAK": { "type": "skater", "data": { "gp": 56, "g": 1, "a": 22, "pts": 23, "pim": 31, "plusMinus": 9, "fow": 0, "fol": 0 } },
-              "STEFFEN_BRA": { "type": "skater", "data": { "gp": 58, "g": 2, "a": 17, "pts": 19, "pim": 16, "plusMinus": 0, "fow": 0, "fol": 0 } },
-              "DUFAULT_AID": { "type": "skater", "data": { "gp": 82, "g": 6, "a": 21, "pts": 27, "pim": 90, "plusMinus": 1, "fow": 0, "fol": 0 } },
-              "HERMAN_MIC": { "type": "skater", "data": { "gp": 54, "g": 2, "a": 6, "pts": 8, "pim": 2, "plusMinus": 0, "fow": 0, "fol": 2 } },
-              "HUOTARI_CAR": { "type": "skater", "data": { "gp": 58, "g": 0, "a": 10, "pts": 10, "pim": 20, "plusMinus": 2, "fow": 0, "fol": 0 } },
-              "CAMPBELL_SEA": { "type": "skater", "data": { "gp": 33, "g": 3, "a": 3, "pts": 6, "pim": 20, "plusMinus": 1, "fow": 1, "fol": 1 } },
-              "KVAMME_BRA": { "type": "skater", "data": { "gp": 11, "g": 3, "a": 0, "pts": 3, "pim": 12, "plusMinus": 0, "fow": 0, "fol": 0 } },
-              "ARNOLD_GEO": { "type": "skater", "data": { "gp": 26, "g": 1, "a": 1, "pts": 2, "pim": 2, "plusMinus": 0, "fow": 1, "fol": 1 } },
-              "STENEHJEM_CHA": { "type": "goalie", "data": { "gp": 59, "min": "1697:49", "w": 28, "l": 4, "t": 1, "so": 3, "ga": 76, "sv": 683 } },
-              "KUNTZ_CAR": { "type": "skater", "data": { "gp": 37, "g": 6, "a": 3, "pts": 9, "pim": 28, "plusMinus": -3, "fow": 0, "fol": 1 } },
-              "GILBERTSON_TAN": { "type": "skater", "data": { "gp": 33, "g": 0, "a": 1, "pts": 1, "pim": 4, "plusMinus": 0, "fow": 0, "fol": 0 } },
-              "PAULSEN_FIN": { "type": "skater", "data": { "gp": 8, "g": 0, "a": 0, "pts": 0, "pim": 2, "plusMinus": 0, "fow": 0, "fol": 0 } },
-              "OVERBO_RYL": { "type": "skater", "data": { "gp": 3, "g": 0, "a": 0, "pts": 0, "pim": 0, "plusMinus": 0, "fow": 0, "fol": 0 } },
-              "BAGNE_WIL": { "type": "skater", "data": { "gp": 6, "g": 0, "a": 0, "pts": 0, "pim": 0, "plusMinus": 0, "fow": 0, "fol": 0 } },
-              "TORTORICE_ALE": { "type": "skater", "data": { "gp": 5, "g": 0, "a": 0, "pts": 0, "pim": 0, "plusMinus": 0, "fow": 0, "fol": 0 } },
-              "EVENSTAD_JAD": { "type": "skater", "data": { "gp": 2, "g": 0, "a": 0, "pts": 0, "pim": 0, "plusMinus": 0, "fow": 0, "fol": 0 } },
-              "COOK_NOL": { "type": "goalie", "data": { "gp": 3, "min": "39:10", "w": 0, "l": 0, "t": 0, "so": 0, "ga": 1, "sv": 11 } },
-              "GAST_PAR": { "type": "skater", "data": { "gp": 52, "g": 14, "a": 22, "pts": 36, "pim": 8, "plusMinus": 1, "fow": 0, "fol": 0 } },
-              "MIDTHUNE_CAR": { "type": "skater", "data": { "gp": 27, "g": 4, "a": 6, "pts": 10, "pim": 4, "plusMinus": -2, "fow": 9, "fol": 9 } },
-              "REIERSON_HAY": { "type": "skater", "data": { "gp": 27, "g": 0, "a": 3, "pts": 3, "pim": 0, "plusMinus": 0, "fow": 0, "fol": 0 } },
-              "WEIGEL_KAI": { "type": "goalie", "data": { "gp": 56, "min": "2780:21", "w": 32, "l": 22, "t": 1, "so": 7, "ga": 137, "sv": 1489 } },
-              "ALLMENDINGER_CAD": { "type": "skater", "data": { "gp": 27, "g": 0, "a": 1, "pts": 1, "pim": 6, "plusMinus": 0, "fow": 0, "fol": 0 } },
-              "STOREY_CHR": { "type": "skater", "data": { "gp": 11, "g": 0, "a": 0, "pts": 0, "pim": 0, "plusMinus": 0, "fow": 0, "fol": 0 } },
-              "HORAN_JON": { "type": "skater", "data": { "gp": 9, "g": 0, "a": 0, "pts": 0, "pim": 0, "plusMinus": 0, "fow": 0, "fol": 0 } },
-              "FOSTER_BER": { "type": "skater", "data": { "gp": 25, "g": 0, "a": 0, "pts": 0, "pim": 0, "plusMinus": 0, "fow": 0, "fol": 0 } },
-              "SULLIVAN_SYL": { "type": "skater", "data": { "gp": 13, "g": 0, "a": 0, "pts": 0, "pim": 2, "plusMinus": 0, "fow": 0, "fol": 0 } },
-              "REIERSON_AAR": { "type": "skater", "data": { "gp": 30, "g": 35, "a": 16, "pts": 51, "pim": 17, "plusMinus": -3, "fow": 0, "fol": 0 } },
-              "ALDERSON_CAL": { "type": "skater", "data": { "gp": 30, "g": 11, "a": 18, "pts": 29, "pim": 24, "plusMinus": 0, "fow": 0, "fol": 0 } },
-              "KRIER_COL": { "type": "skater", "data": { "gp": 30, "g": 7, "a": 16, "pts": 23, "pim": 40, "plusMinus": -2, "fow": 0, "fol": 0 } },
-              "LINDBERG_GAR": { "type": "skater", "data": { "gp": 30, "g": 4, "a": 15, "pts": 19, "pim": 14, "plusMinus": -1, "fow": 0, "fol": 0 } },
-              "NESS_IAN": { "type": "skater", "data": { "gp": 30, "g": 9, "a": 10, "pts": 19, "pim": 10, "plusMinus": -2, "fow": 0, "fol": 0 } },
-              "KORTAN_JOE": { "type": "skater", "data": { "gp": 30, "g": 5, "a": 13, "pts": 18, "pim": 10, "plusMinus": -2, "fow": 0, "fol": 0 } },
-              "CARLSON_ABE": { "type": "skater", "data": { "gp": 30, "g": 7, "a": 7, "pts": 14, "pim": 6, "plusMinus": 0, "fow": 0, "fol": 0 } },
-              "ARNOLD_JAC": { "type": "skater", "data": { "gp": 30, "g": 2, "a": 6, "pts": 8, "pim": 16, "plusMinus": 0, "fow": 0, "fol": 0 } },
-              "SIMONICH_JOE": { "type": "skater", "data": { "gp": 24, "g": 2, "a": 5, "pts": 7, "pim": 2, "plusMinus": 0, "fow": 0, "fol": 0 } },
-              "BAUMGARTNER_COL": { "type": "skater", "data": { "gp": 30, "g": 0, "a": 6, "pts": 6, "pim": 14, "plusMinus": -1, "fow": 0, "fol": 0 } },
-              "SONGSTAD_DAL": { "type": "skater", "data": { "gp": 30, "g": 0, "a": 4, "pts": 4, "pim": 6, "plusMinus": -1, "fow": 0, "fol": 0 } },
-              "LAMMERS_EAS": { "type": "skater", "data": { "gp": 30, "g": 1, "a": 1, "pts": 2, "pim": 4, "plusMinus": -1, "fow": 0, "fol": 0 } },
-              "BLYTHE_JAC": { "type": "skater", "data": { "gp": 28, "g": 1, "a": 1, "pts": 2, "pim": 2, "plusMinus": 0, "fow": 0, "fol": 0 } },
-              "WILSON_CUL": { "type": "skater", "data": { "gp": 17, "g": 1, "a": 0, "pts": 1, "pim": 0, "plusMinus": 0, "fow": 0, "fol": 0 } },
-              "GRAMER_MAT": { "type": "skater", "data": { "gp": 3, "g": 0, "a": 0, "pts": 0, "pim": 0, "plusMinus": 0, "fow": 0, "fol": 0 } },
-              "ASHEIM_COL": { "type": "skater", "data": { "gp": 3, "g": 0, "a": 0, "pts": 0, "pim": 0, "plusMinus": 0, "fow": 0, "fol": 0 } }
-              
+              "BERGESON_TYD": {"type": "skater", "data": {"gp": 89, "g": 74, "a": 95, "pts": 169, "pim": 34, "plusMinus": 0, "fow": 11, "fol": 5, "bs": 0}},
+              "MICKELSON_BRA": {"type": "skater", "data": {"gp": 89, "g": 34, "a": 98, "pts": 132, "pim": 82, "plusMinus": 8, "fow": 0, "fol": 0, "bs": 0}},
+              "ZIMMERMAN_ZAC": {"type": "skater", "data": {"gp": 89, "g": 73, "a": 111, "pts": 184, "pim": 30, "plusMinus": 6, "fow": 9, "fol": 6, "bs": 0}},
+              "CULLEN_MAX": {"type": "skater", "data": {"gp": 60, "g": 38, "a": 53, "pts": 91, "pim": 26, "plusMinus": 3, "fow": 3, "fol": 6, "bs": 0}},
+              "WANNER_EVA": {"type": "skater", "data": {"gp": 62, "g": 26, "a": 38, "pts": 64, "pim": 34, "plusMinus": 6, "fow": 0, "fol": 0, "bs": 0}},
+              "CULLEN_JOE": {"type": "skater", "data": {"gp": 18, "g": 19, "a": 21, "pts": 40, "pim": 6, "plusMinus": 0, "fow": 0, "fol": 0, "bs": 0}},
+              "GRAMER_JOH": {"type": "skater", "data": {"gp": 31, "g": 10, "a": 14, "pts": 24, "pim": 2, "plusMinus": 0, "fow": 0, "fol": 0, "bs": 0}},
+              "HERMAN_MIC": {"type": "skater", "data": {"gp": 85, "g": 9, "a": 21, "pts": 30, "pim": 16, "plusMinus": 0, "fow": 0, "fol": 2, "bs": 0}},
+              "KORTAN_DRE": {"type": "skater", "data": {"gp": 31, "g": 4, "a": 16, "pts": 20, "pim": 27, "plusMinus": 0, "fow": 0, "fol": 0, "bs": 0}},
+              "CAMPBELL_SEA": {"type": "skater", "data": {"gp": 64, "g": 11, "a": 11, "pts": 22, "pim": 34, "plusMinus": 1, "fow": 1, "fol": 1, "bs": 0}},
+              "DEVIG_ZAK": {"type": "skater", "data": {"gp": 87, "g": 4, "a": 34, "pts": 38, "pim": 41, "plusMinus": 9, "fow": 0, "fol": 0, "bs": 0}},
+              "CULLEN_WIL": {"type": "skater", "data": {"gp": 27, "g": 4, "a": 7, "pts": 11, "pim": 12, "plusMinus": 0, "fow": 0, "fol": 0, "bs": 0}},
+              "SIMONICH_DRE": {"type": "skater", "data": {"gp": 50, "g": 5, "a": 24, "pts": 29, "pim": 32, "plusMinus": 0, "fow": 0, "fol": 0, "bs": 0}},
+              "PAULSEN_FIN": {"type": "skater", "data": {"gp": 39, "g": 0, "a": 8, "pts": 8, "pim": 14, "plusMinus": 0, "fow": 0, "fol": 0, "bs": 0}},
+              "STEFFEN_BRA": {"type": "skater", "data": {"gp": 88, "g": 2, "a": 25, "pts": 27, "pim": 32, "plusMinus": 0, "fow": 0, "fol": 0, "bs": 0}},
+              "ARNOLD_GEO": {"type": "skater", "data": {"gp": 55, "g": 4, "a": 4, "pts": 8, "pim": 20, "plusMinus": 0, "fow": 1, "fol": 1, "bs": 0}},
+              "KALLHOFF_GAG": {"type": "skater", "data": {"gp": 25, "g": 0, "a": 2, "pts": 2, "pim": 0, "plusMinus": 0, "fow": 0, "fol": 0, "bs": 0}},
+              "ARNOLD_WIL": {"type": "goalie", "data": {"gp": 29, "min": "1371:14", "w": 23, "l": 3, "t": 1, "so": 5, "ga": 59, "sv": 499}},
+              "HUOTARI_GRA": {"type": "skater", "data": {"gp": 15, "g": 0, "a": 1, "pts": 1, "pim": 2, "plusMinus": 0, "fow": 0, "fol": 0, "bs": 0}},
+              "BAGNE_WIL": {"type": "skater", "data": {"gp": 27, "g": 1, "a": 0, "pts": 1, "pim": 2, "plusMinus": 0, "fow": 0, "fol": 0, "bs": 0}},
+              "COOK_NOL": {"type": "goalie", "data": {"gp": 22, "min": "175:10", "w": 2, "l": 0, "t": 0, "so": 0, "ga": 6, "sv": 44}},
+              "PETERSEN_NOA": {"type": "skater", "data": {"gp": 17, "g": 0, "a": 1, "pts": 1, "pim": 0, "plusMinus": 0, "fow": 0, "fol": 0, "bs": 0}},
+              "WRIGHT_OWE": {"type": "skater", "data": {"gp": 7, "g": 0, "a": 0, "pts": 0, "pim": 0, "plusMinus": 0, "fow": 0, "fol": 0, "bs": 0}},
+              "OVERBO_RYL": {"type": "skater", "data": {"gp": 8, "g": 0, "a": 0, "pts": 0, "pim": 0, "plusMinus": 0, "fow": 0, "fol": 0, "bs": 0}},
+              "VANNETT_BRE": {"type": "skater", "data": {"gp": 2, "g": 0, "a": 0, "pts": 0, "pim": 0, "plusMinus": 0, "fow": 0, "fol": 0, "bs": 0}},
+              "ULNESS_JON": {"type": "skater", "data": {"gp": 0, "g": 0, "a": 0, "pts": 0, "pim": 0, "plusMinus": 0, "fow": 0, "fol": 0, "bs": 0}},
+              "GREGOIRE_MAD": {"type": "goalie", "data": {"gp": 4, "min": "102:00", "w": 2, "l": 0, "t": 0, "so": 0, "ga": 4, "sv": 24}},
+              "KRAFT_MAS": {"type": "skater", "data": {"gp": 58, "g": 60, "a": 74, "pts": 134, "pim": 40, "plusMinus": 7, "fow": 0, "fol": 0, "bs": 0}},
+              "CULLEN_BRO": {"type": "skater", "data": {"gp": 56, "g": 38, "a": 30, "pts": 68, "pim": 58, "plusMinus": 1, "fow": 23, "fol": 13, "bs": 0}},
+              "HASBARGEN_CAR": {"type": "skater", "data": {"gp": 58, "g": 14, "a": 38, "pts": 52, "pim": 26, "plusMinus": 4, "fow": 12, "fol": 10, "bs": 0}},
+              "DUFAULT_AID": {"type": "skater", "data": {"gp": 53, "g": 4, "a": 18, "pts": 22, "pim": 78, "plusMinus": 1, "fow": 0, "fol": 0, "bs": 0}},
+              "HUOTARI_CAR": {"type": "skater", "data": {"gp": 58, "g": 0, "a": 10, "pts": 10, "pim": 20, "plusMinus": 2, "fow": 0, "fol": 0, "bs": 0}},
+              "KVAMME_BRA": {"type": "skater", "data": {"gp": 11, "g": 3, "a": 0, "pts": 3, "pim": 12, "plusMinus": 0, "fow": 0, "fol": 0, "bs": 0}},
+              "STENEHJEM_CHA": {"type": "goalie", "data": {"gp": 50, "min": "1678:39", "w": 28, "l": 4, "t": 1, "so": 3, "ga": 74, "sv": 672}},
+              "KUNTZ_CAR": {"type": "skater", "data": {"gp": 34, "g": 6, "a": 3, "pts": 9, "pim": 28, "plusMinus": -3, "fow": 0, "fol": 1, "bs": 0}},
+              "GILBERTSON_TAN": {"type": "skater", "data": {"gp": 33, "g": 0, "a": 1, "pts": 1, "pim": 4, "plusMinus": 0, "fow": 0, "fol": 0, "bs": 0}},
+              "TORTORICE_ALE": {"type": "skater", "data": {"gp": 5, "g": 0, "a": 0, "pts": 0, "pim": 0, "plusMinus": 0, "fow": 0, "fol": 0, "bs": 0}},
+              "EVENSTAD_JAD": {"type": "skater", "data": {"gp": 2, "g": 0, "a": 0, "pts": 0, "pim": 0, "plusMinus": 0, "fow": 0, "fol": 0, "bs": 0}},
+              "GAST_PAR": {"type": "skater", "data": {"gp": 27, "g": 6, "a": 15, "pts": 21, "pim": 0, "plusMinus": 1, "fow": 0, "fol": 0, "bs": 0}},
+              "MIDTHUNE_CAR": {"type": "skater", "data": {"gp": 27, "g": 4, "a": 6, "pts": 10, "pim": 4, "plusMinus": -2, "fow": 9, "fol": 9, "bs": 0}},
+              "REIERSON_HAY": {"type": "skater", "data": {"gp": 27, "g": 0, "a": 3, "pts": 3, "pim": 0, "plusMinus": 0, "fow": 0, "fol": 0, "bs": 0}},
+              "WEIGEL_KAI": {"type": "goalie", "data": {"gp": 26, "min": "1262:22", "w": 13, "l": 11, "t": 1, "so": 2, "ga": 77, "sv": 716}},
+              "ALLMENDINGER_CAD": {"type": "skater", "data": {"gp": 27, "g": 0, "a": 1, "pts": 1, "pim": 6, "plusMinus": 0, "fow": 0, "fol": 0, "bs": 0}},
+              "STOREY_CHR": {"type": "skater", "data": {"gp": 11, "g": 0, "a": 0, "pts": 0, "pim": 0, "plusMinus": 0, "fow": 0, "fol": 0, "bs": 0}},
+              "HORAN_JON": {"type": "skater", "data": {"gp": 9, "g": 0, "a": 0, "pts": 0, "pim": 0, "plusMinus": 0, "fow": 0, "fol": 0, "bs": 0}},
+              "FOSTER_BER": {"type": "skater", "data": {"gp": 25, "g": 0, "a": 0, "pts": 0, "pim": 0, "plusMinus": 0, "fow": 0, "fol": 0, "bs": 0}},
+              "SULLIVAN_SYL": {"type": "skater", "data": {"gp": 13, "g": 0, "a": 0, "pts": 0, "pim": 2, "plusMinus": 0, "fow": 0, "fol": 0, "bs": 0}}
             },
             pronunciations: {}
           },
-          careerSeasonData: { season1: '', season2: '', season3: '' }
+          careerSeasonData: {
+            season1: " \nLogin\n \nCreate an Account\nSportsEngine\nskip navigation\nLegacy Hockey | Minnesota's No. 1 resource for high school hockey's past, present and future.\n\n \nTeam Search\nSearch\nThe TourneyMSHSLNewsTourney TimeSponsorshipsMore\nSubscribe\nMoorhead\nHistory\nRegular & Postseason\n2025-26\nConference Standings\n Mariucci \n Moorhead \nMoorhead\nHome\nRoster\nGame Schedule\nPlayer Stats\nTeam Stats\nStandings\nPhotos\nVideos\nPosts\nLeague\nDivision\nFilters\nPosition\nAll\nDefenseForwardGoalie\nPlayer Stats\nSkater\n#\nName\nPos\tGrade\t\nGP\nG\nA\nPTS\nSOG\nSOG %\nPPG\nPPA\nSH\nSHA\nPEN\nPIM\nFOW\nFOL\nTO\nHIT\nBS\n+ / -\nGW\nAVG PTS\n23\tTyden Bergeson\tF\t12\t31\t29\t52\t81\t37\t78.4\t5\t15\t0\t0\t14\t28\t0\t0\t0\t0\t0\t0\t8\t2.61\n4\tBrandon Mickelson\tD\t12\t31\t21\t44\t65\t25\t84.0\t7\t14\t0\t0\t14\t28\t0\t0\t0\t0\t0\t0\t4\t2.10\n7\tZac Zimmerman\tF\t11\t31\t26\t38\t64\t29\t89.7\t5\t15\t1\t0\t9\t16\t0\t0\t0\t0\t0\t0\t4\t2.06\n11\tMax Cullen\tF\t11\t29\t27\t36\t63\t30\t90.0\t4\t10\t0\t0\t6\t12\t0\t0\t0\t0\t0\t0\t4\t2.17\n20\tEvan Wanner\tF\t11\t31\t16\t27\t43\t21\t76.2\t5\t2\t0\t0\t6\t12\t0\t0\t0\t0\t0\t0\t2\t1.39\n6\tJoey Cullen\tF\t10\t18\t19\t21\t40\t25\t76.0\t6\t4\t0\t0\t3\t6\t0\t0\t0\t0\t0\t0\t1\t2.22\n28\tJohn Gramer\tF\t10\t31\t10\t14\t24\t12\t83.3\t0\t1\t1\t1\t1\t2\t0\t0\t0\t0\t0\t0\t0\t0.77\n10\tMichael Herman\tF\t12\t31\t7\t15\t22\t8\t87.5\t1\t0\t0\t0\t7\t14\t0\t0\t0\t0\t0\t0\t1\t0.71\n27\tDrew Kortan\tD\t10\t31\t4\t16\t20\t7\t57.1\t0\t1\t0\t0\t8\t27\t0\t0\t0\t0\t0\t0\t1\t0.65\n21\tSeamus Campbell\tF\t12\t31\t8\t8\t16\t12\t66.7\t0\t0\t0\t0\t7\t14\t0\t0\t0\t0\t0\t0\t0\t0.52\n15\tZak Devig\tD\t12\t31\t3\t12\t15\t7\t42.9\t1\t1\t0\t1\t5\t10\t0\t0\t0\t0\t0\t0\t0\t0.48\n8\tWill Cullen\tF\t9\t27\t4\t7\t11\t4\t100.0\t0\t0\t1\t1\t6\t12\t0\t0\t0\t0\t0\t0\t0\t0.41\n3\tDrew Simonich\tD\t11\t19\t2\t8\t10\t5\t40.0\t0\t0\t0\t1\t5\t18\t0\t0\t0\t0\t0\t0\t0\t0.53\n2\tFinn Paulsen\tD\t11\t31\t0\t8\t8\t0\t0.0\t0\t0\t0\t0\t7\t12\t0\t0\t0\t0\t0\t0\t0\t0.26\n5\tBrady Steffen\tD\t12\t30\t0\t8\t8\t0\t0.0\t0\t0\t0\t0\t7\t16\t0\t0\t0\t0\t0\t0\t0\t0.27\n12\tGeorge Arnold\tF\t12\t29\t3\t3\t6\t3\t100.0\t0\t0\t0\t0\t9\t18\t0\t0\t0\t0\t0\t0\t2\t0.21\n13\tGage Kallhoff\tF\t10\t25\t0\t2\t2\t1\t0.0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0.08\n31\tWill Arnold\tG\t10\t2\t0\t2\t2\t0\t0.0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1.00\n14\tGrady Huotari\tD\t11\t15\t0\t1\t1\t0\t0.0\t0\t0\t0\t0\t1\t2\t0\t0\t0\t0\t0\t0\t0\t0.07\n24\tWill Bagne\tF\t11\t21\t1\t0\t1\t2\t50.0\t0\t0\t0\t0\t1\t2\t0\t0\t0\t0\t0\t0\t0\t0.05\n30\tNolan Cook\tG\t12\t1\t0\t1\t1\t0\t0.0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1.00\n16\tNoah Petersen\tF\t10\t17\t0\t1\t1\t0\t0.0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0.06\n19\tOwen Wright\tF\t10\t7\t0\t0\t0\t0\t0.0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0.00\n18\tRylan Overbo\tF\t11\t5\t0\t0\t0\t0\t0.0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0.00\n26\tBrennen Vannett\tF\t10\t2\t0\t0\t0\t0\t0.0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0.00\n22\tJonny Ulness\tD\t\t1\t0\t0\t0\t0\t0.0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0.00\nGoalie\n#\nName\nPos\tGrade\t\nGP\nMIN\nW\nL\nT\nSOG\nGA\nSV\nGAA\nSV %\nSO\n33\tMaddox Gregoire\tG\t10\t4\t102:00\t2\t0\t0\t28\t4\t24\t2.00\t.857\t0\n30\tNolan Cook\tG\t12\t19\t136:00\t2\t0\t0\t38\t5\t33\t1.88\t.868\t0\n31\tWill Arnold\tG\t10\t29\t1371:14\t23\t3\t1\t558\t59\t499\t2.19\t.894\t5\n",
+            season2: " \nLogin\n \nCreate an Account\nSportsEngine\nskip navigation\nLegacy Hockey | Minnesota's No. 1 resource for high school hockey's past, present and future.\n\n \nTeam Search\nSearch\nThe TourneyMSHSLNewsTourney TimeSponsorshipsMore\nSubscribe\nMoorhead\nHistory\nRegular & Postseason\n2024-25\nConference Standings\n Mariucci \n Moorhead \nMoorhead\nHome\nRoster\nGame Schedule\nPlayer Stats\nTeam Stats\nStandings\nPhotos\nVideos\nPosts\nLeague\nDivision\nFilters\nPosition\nAll\nDefenseForwardGoalie\nPlayer Stats\nSkater\n#\nName\nGP\nG\nA\nPTS\nSOG\nSOG %\nPPG\nPPA\nSH\nSHA\nPEN\nPIM\nFOW\nFOL\nTO\nHIT\nBS\n+ / -\nGW\nAVG PTS\n19\tMason Kraft\t31\t45\t49\t94\t76\t59.2\t10\t11\t3\t0\t13\t26\t0\t0\t0\t0\t0\t10\t2\t3.03\n7\tZac Zimmerman\t31\t32\t44\t76\t48\t66.7\t9\t16\t0\t0\t4\t8\t1\t1\t0\t0\t0\t7\t7\t2.45\n23\tTyden Bergeson\t31\t25\t26\t51\t48\t52.1\t5\t7\t3\t2\t2\t4\t6\t2\t0\t0\t0\t1\t8\t1.65\n8\tBrooks Cullen\t29\t23\t24\t47\t40\t57.5\t4\t5\t2\t1\t8\t16\t15\t3\t0\t0\t0\t2\t6\t1.62\n4\tBrandon Mickelson\t31\t8\t36\t44\t18\t44.4\t1\t18\t0\t0\t12\t24\t0\t0\t0\t0\t0\t8\t0\t1.42\n13\tCarver Hasbargen\t31\t9\t23\t32\t25\t36.0\t1\t1\t1\t0\t10\t20\t10\t5\t0\t0\t0\t2\t2\t1.03\n11\tMax Cullen\t31\t11\t17\t28\t20\t55.0\t2\t1\t0\t0\t6\t14\t3\t6\t0\t0\t0\t3\t0\t0.90\n20\tEvan Wanner\t31\t10\t11\t21\t15\t66.7\t0\t1\t0\t0\t7\t22\t0\t0\t0\t0\t0\t6\t1\t0.68\n3\tDrew Simonich\t31\t3\t16\t19\t7\t42.9\t0\t1\t0\t1\t7\t14\t0\t0\t0\t0\t0\t0\t0\t0.61\n15\tZak Devig\t31\t0\t14\t14\t6\t0.0\t0\t2\t0\t1\t11\t25\t0\t0\t0\t0\t0\t8\t0\t0.45\n5\tBrady Steffen\t31\t2\t11\t13\t4\t50.0\t0\t0\t0\t0\t6\t12\t0\t0\t0\t0\t0\t1\t1\t0.42\n6\tAiden Dufault\t26\t1\t10\t11\t5\t20.0\t0\t0\t0\t1\t15\t43\t0\t0\t0\t0\t0\t2\t0\t0.42\n10\tMichael Herman\t28\t1\t6\t7\t9\t11.1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0.25\n14\tCarter Huotari\t31\t0\t7\t7\t0\t0.0\t0\t0\t0\t0\t4\t16\t0\t0\t0\t0\t0\t3\t0\t0.23\n21\tSeamus Campbell\t31\t3\t3\t6\t7\t42.9\t0\t0\t0\t0\t9\t20\t1\t1\t0\t0\t0\t1\t0\t0.19\n26\tBrayden Kvamme\t11\t3\t0\t3\t3\t100.0\t0\t0\t0\t0\t5\t12\t0\t0\t0\t0\t0\t0\t1\t0.27\n12\tGeorge Arnold\t26\t1\t1\t2\t2\t50.0\t0\t0\t0\t0\t1\t2\t1\t1\t0\t0\t0\t0\t0\t0.08\n33\tCharlie Stenehjem\t3\t0\t2\t2\t0\t0.0\t0\t0\t0\t1\t1\t2\t0\t0\t0\t0\t0\t0\t0\t0.67\n16\tCarson Kuntz\t7\t0\t1\t1\t0\t0.0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0.14\n22\tTanner Gilbertson\t31\t0\t1\t1\t0\t0.0\t0\t0\t0\t0\t2\t4\t0\t0\t0\t0\t0\t0\t0\t0.03\n2\tFinn Paulsen\t8\t0\t0\t0\t0\t0.0\t0\t0\t0\t0\t1\t2\t0\t0\t0\t0\t0\t0\t0\t0.00\n18\tRylan Overbo\t3\t0\t0\t0\t0\t0.0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0.00\n24\tWill Bagne\t6\t0\t0\t0\t0\t0.0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0.00\n25\tAlex Tortorice\t5\t0\t0\t0\t0\t0.0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0.00\n28\tJaden Evenstad\t2\t0\t0\t0\t0\t0.0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0.00\nGoalie\n#\nName\nGP\nMIN\nW\nL\nT\nSOG\nGA\nSV\nGAA\nSV %\nSO\n33\tCharlie Stenehjem\t31\t1560:12\t28\t2\t1\t671\t64\t607\t2.09\t.905\t3\n30\tNolan Cook\t3\t39:10\t0\t0\t0\t12\t1\t11\t1.30\t.917\t0\n",
+            season3: " \nLogin\n \nCreate an Account\nSportsEngine\nskip navigation\nLegacy Hockey | Minnesota's No. 1 resource for high school hockey's past, present and future.\n\n \nTeam Search\nSearch\nThe TourneyMSHSLNewsTourney TimeSponsorshipsPhotosGift ShopElite LeagueMore\nSubscribe\nMariucci\nBemidjiCrookstonEast Grand ForksMoorheadRoseauThief River FallsWarroad\nRegular & Postseason\n2023-24\nConference Standings\n Mariucci \n Moorhead \nMoorhead\nHome\nRoster\nGame Schedule\nPlayer Stats\nTeam Stats\nStandings\nPhotos\nVideos\nPosts\nLeague\nDivision\nFilters\nPosition\nAll\nDefenseForwardGoalie\nPlayer Stats\nSkater\n#\nName\nGP\nG\nA\nPTS\nSOG\nSOG %\nPPG\nPPA\nSH\nSHA\nPEN\nPIM\nFOW\nFOL\nTO\nHIT\nBS\n+ / -\nGW\nAVG PTS\n7\tZac Zimmerman\t27\t15\t29\t44\t23\t65.2\t4\t13\t2\t0\t3\t6\t8\t5\t0\t0\t0\t-1\t2\t1.63\n19\tMason Kraft\t27\t15\t25\t40\t17\t88.2\t6\t8\t0\t0\t7\t14\t0\t0\t0\t0\t0\t-3\t0\t1.48\n23\tTyden Bergeson\t27\t20\t17\t37\t25\t80.0\t3\t6\t1\t1\t1\t2\t5\t3\t0\t0\t0\t-1\t1\t1.37\n4\tBrandon Mickelson\t27\t5\t18\t23\t8\t62.5\t1\t10\t0\t0\t15\t30\t0\t0\t0\t0\t0\t0\t1\t0.85\n8\tBrooks Cullen\t27\t15\t6\t21\t23\t65.2\t7\t4\t1\t0\t17\t42\t8\t10\t0\t0\t0\t-1\t3\t0.78\n11\tParker Gast\t27\t6\t15\t21\t12\t50.0\t0\t1\t0\t2\t0\t0\t0\t0\t0\t0\t0\t1\t1\t0.78\n13\tCarver Hasbargen\t27\t5\t15\t20\t8\t62.5\t0\t3\t0\t0\t3\t6\t2\t5\t0\t0\t0\t2\t1\t0.74\n6\tAiden Dufault\t27\t3\t8\t11\t3\t100.0\t1\t1\t0\t1\t16\t35\t0\t0\t0\t0\t0\t-1\t1\t0.41\n12\tCarter Midthune\t27\t4\t6\t10\t18\t22.2\t1\t0\t0\t0\t2\t4\t9\t9\t0\t0\t0\t-2\t1\t0.37\n15\tZak Devig\t25\t1\t8\t9\t2\t50.0\t0\t0\t0\t0\t3\t6\t0\t0\t0\t0\t0\t1\t0\t0.36\n16\tCarson Kuntz\t27\t6\t2\t8\t7\t85.7\t0\t0\t0\t0\t14\t28\t0\t1\t0\t0\t0\t-3\t2\t0.30\n5\tBrady Steffen\t27\t0\t6\t6\t2\t0.0\t0\t1\t0\t0\t2\t4\t0\t0\t0\t0\t0\t-1\t0\t0.22\n2\tHayden Reierson\t27\t0\t3\t3\t0\t0.0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0.11\n14\tCarter Huotari\t27\t0\t3\t3\t2\t0.0\t0\t0\t0\t0\t2\t4\t0\t0\t0\t0\t0\t-1\t0\t0.11\n31\tKai Weigel\t4\t0\t3\t3\t0\t0.0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0.75\n10\tMichael Herman\t26\t1\t0\t1\t1\t100.0\t1\t0\t0\t0\t1\t2\t0\t2\t0\t0\t0\t0\t0\t0.04\n18\tCade Allmendinger\t27\t0\t1\t1\t1\t0.0\t0\t0\t0\t0\t3\t6\t0\t0\t0\t0\t0\t0\t0\t0.04\n20\tChristian Storey\t11\t0\t0\t0\t0\t0.0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0.00\n24\tJonah Horan\t9\t0\t0\t0\t0\t0.0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0.00\n26\tBert Foster\t25\t0\t0\t0\t0\t0.0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0.00\n27\tSyler Sullivan\t13\t0\t0\t0\t0\t0.0\t0\t0\t0\t0\t1\t2\t0\t0\t0\t0\t0\t0\t0\t0.00\n22\tTanner Gilbertson\t2\t0\t0\t0\t0\t0.0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0.00\n28\tSeamus Campbell\t2\t0\t0\t0\t0\t0.0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0.00\nGoalie\n#\nName\nGP\nMIN\nW\nL\nT\nSOG\nGA\nSV\nGAA\nSV %\nSO\n33\tCharlie Stenehjem\t19\t118:27\t0\t2\t0\t75\t10\t65\t4.31\t.867\t0\n31\tKai Weigel\t26\t1262:22\t13\t11\t1\t793\t77\t716\t3.11\t.903\t2\n"
+          }
         };
         // ====
         // ============================================================
@@ -424,7 +423,7 @@
             return '#' + [r,g,b].map(v => v.toString(16).padStart(2,'0')).join('');
           };
 
-          const getJerseyColors = (primary, secondary) => {
+          const getJerseyColors = (primary, secondary, jerseyFill, jerseyOutline) => {
             const brightness = (hex) => {
               const h = (hex || '#000').replace('#','');
               if (h.length !== 6) return 0;
@@ -438,6 +437,12 @@
               const b = Math.max(0, parseInt(h.slice(4,6),16) - amount);
               return '#' + [r,g,b].map(v => v.toString(16).padStart(2,'0')).join('');
             };
+            // Allow per-team override via jerseyFill / jerseyOutline in team config
+            if (jerseyFill && jerseyOutline) {
+              let outline = jerseyOutline;
+              if (brightness(outline) > 210) outline = darkenColor(outline, 60);
+              return { fill: jerseyFill, outline };
+            }
             const bp = brightness(primary), bs = brightness(secondary);
             let fill = bp <= bs ? primary : secondary;
             let outline = bp <= bs ? secondary : primary;
@@ -693,6 +698,16 @@
           const [showExport, setShowExport] = useState(false);
           const [exportData, setExportData] = useState('');
           const [showHelp, setShowHelp] = useState(false);
+          const [jerseySwapped, setJerseySwapped] = React.useState(() => {
+            try { return localStorage.getItem('llc_jerseySwapped') === 'true'; } catch(e) { return false; }
+          });
+          const toggleJerseySwap = () => {
+            setJerseySwapped(prev => {
+              const next = !prev;
+              try { localStorage.setItem('llc_jerseySwapped', String(next)); } catch(e) {}
+              return next;
+            });
+          };
 
           const [fwdSort, setFwdSort] = useState({ col: null, dir: 'desc' });
           const [defSort, setDefSort] = useState({ col: null, dir: 'desc' });
@@ -1101,9 +1116,9 @@
             
             let seasonStartYear;
             if (currentMonth >= 4) {
-              seasonStartYear = currentYear - 1;
+              seasonStartYear = currentYear;
             } else {
-              seasonStartYear = currentYear - 2;
+              seasonStartYear = currentYear - 1;
             }
             
             const short = (y) => `'${String(y).slice(2)}-'${String(y+1).slice(2)}`;
@@ -1134,7 +1149,7 @@
             const exportObj = {
               _exportInfo: {
                 exportDate: new Date().toISOString(),
-                version: '40.9',
+                version: '50.4',
                 teamName: myTeamSetup.teamName,
                 description: 'Full team configuration for subscriber site build'
               },
@@ -1860,7 +1875,7 @@
                     console.log('✓ Found player (tab-separated):', { number, name, position, grade });
                     
                     // Strip (Capt.) or (Capt) or * from names
-                    const cleanName = name.replace(/\s*\(Capt\.?\)/i, '').replace(/\*/g, '').trim();
+                    const cleanName = name.replace(/\s*\(Capt\.?\)/gi, '').replace(/\s*\(Captain\)/gi, '').replace(/\s*\(C\)/gi, '').replace(/\s*\bC\b$/g, '').replace(/\*/g, '').trim();
                     const nameParts = cleanName.split(' ');
                     const lastName = nameParts[nameParts.length - 1];
                     const firstName = nameParts.slice(0, -1).join(' ');
@@ -2025,7 +2040,7 @@
                     console.log('✓ Found player (concatenated):', { number, name, position, grade, height, weight, shoots, dobYear });
                     
                     // Strip (Capt.) or (Capt) or * from names
-                    const cleanName = name.replace(/\s*\(Capt\.?\)/i, '').replace(/\*/g, '').trim();
+                    const cleanName = name.replace(/\s*\(Capt\.?\)/gi, '').replace(/\s*\(Captain\)/gi, '').replace(/\s*\(C\)/gi, '').replace(/\s*\bC\b$/g, '').replace(/\*/g, '').trim();
                     const nameParts = cleanName.split(' ');
                     const lastName = nameParts[nameParts.length - 1];
                     const firstName = nameParts.slice(0, -1).join(' ');
@@ -2114,7 +2129,7 @@
                 const normalizedStatsPos = statsPos ? statsPos.split('|')[0] : null;
 
                 // Clean name
-                const cleanName = name.replace(/\s*\(Capt\.?\)/i, '').replace(/\*/g, '').trim();
+                const cleanName = name.replace(/\s*\(Capt\.?\)/gi, '').replace(/\s*\(Captain\)/gi, '').replace(/\s*\(C\)/gi, '').replace(/\s*\bC\b$/g, '').replace(/\*/g, '').trim();
 
                 if (inSkaterSection) {
                   const player = updatedRoster.find(p =>
@@ -2780,26 +2795,39 @@
                   if (fields.length < 3) continue;
                   
                   const number = fields[0];
-                  const name = fields[1];
+                  const rawName = fields[1];
                   
                   if (!/^\d+$/.test(number)) continue;
+
+                  // Strip all captain/designation suffixes — coaches use many styles:
+                  // (Capt.), (C), (Captain), *, C at end, leading *
+                  const cleanedName = rawName
+                    .replace(/\s*\(Capt\.?\)/gi, '')
+                    .replace(/\s*\(Captain\)/gi, '')
+                    .replace(/\s*\(C\)/gi, '')
+                    .replace(/\s*\bC\b$/g, '')
+                    .replace(/\*/g, '')
+                    .trim();
                   
-                  const nameParts = name.trim().split(/\s+/);
+                  const nameParts = cleanedName.split(/\s+/);
                   // Use first 3 chars to distinguish siblings (e.g., Jonny vs Joe McCabe)
                   const firstChars = nameParts[0]?.substring(0, 3)?.toUpperCase() || '';
                   const lastName = nameParts[nameParts.length - 1]?.toUpperCase() || '';
                   const key = `${lastName}_${firstChars}`;
                   
                   if (inSkaterSection && fields.length >= 6) {
-                    const seasonGP = parseInt(fields[2]) || 0;
-                    const seasonG = parseInt(fields[3]) || 0;
-                    const seasonA = parseInt(fields[4]) || 0;
-                    const seasonPts = parseInt(fields[5]) || 0;
-                    const seasonPIM = parseInt(fields[13]) || 0;
-                    const seasonPlusMinus = parseInt(fields[19]) || 0;
-                    const seasonFOW = parseInt(fields[14]) || 0;
-                    const seasonFOL = parseInt(fields[15]) || 0;
-                    const seasonBS = parseInt(fields[18]) || 0;
+                    // Detect 25-26+ format: fields[2] is Pos (F/D/G), fields[3] is Grade
+                    const hasNewFmt = fields[2] && /^(F|D|G|D\|F|F\|D|F\|G|G\|F)$/i.test(fields[2]);
+                    const fo = hasNewFmt ? 2 : 0;
+                    const seasonGP = parseInt(fields[2 + fo]) || 0;
+                    const seasonG = parseInt(fields[3 + fo]) || 0;
+                    const seasonA = parseInt(fields[4 + fo]) || 0;
+                    const seasonPts = parseInt(fields[5 + fo]) || 0;
+                    const seasonPIM = parseInt(fields[13 + fo]) || 0;
+                    const seasonPlusMinus = parseInt(fields[19 + fo]) || 0;
+                    const seasonFOW = parseInt(fields[14 + fo]) || 0;
+                    const seasonFOL = parseInt(fields[15 + fo]) || 0;
+                    const seasonBS = parseInt(fields[18 + fo]) || 0;
                     
                     if (careerData[key]?.type === 'goalie') {
                       console.log(`⚠️ Skipping skater stats for ${name} - already saved as goalie`);
@@ -2825,14 +2853,17 @@
                     
                     console.log(`✓ Added skater career for ${name} (${key}):`, careerData[key].data);
                   } else if (inGoalieSection && fields.length >= 10) {
-                    const seasonGP = parseInt(fields[2]) || 0;
-                    const seasonMin = fields[3] || '0:00';
-                    const seasonW = parseInt(fields[4]) || 0;
-                    const seasonL = parseInt(fields[5]) || 0;
-                    const seasonT = parseInt(fields[6]) || 0;
-                    const seasonSO = parseInt(fields[12]) || 0;
-                    const seasonGA = parseInt(fields[8]) || 0;
-                    const seasonSV = parseInt(fields[9]) || 0;
+                    // Detect 25-26+ format for goalies too
+                    const hasNewFmtG = fields[2] && /^(F|D|G|D\|F|F\|D|F\|G|G\|F)$/i.test(fields[2]);
+                    const fog = hasNewFmtG ? 2 : 0;
+                    const seasonGP = parseInt(fields[2 + fog]) || 0;
+                    const seasonMin = fields[3 + fog] || '0:00';
+                    const seasonW = parseInt(fields[4 + fog]) || 0;
+                    const seasonL = parseInt(fields[5 + fog]) || 0;
+                    const seasonT = parseInt(fields[6 + fog]) || 0;
+                    const seasonSO = parseInt(fields[12 + fog]) || 0;
+                    const seasonGA = parseInt(fields[8 + fog]) || 0;
+                    const seasonSV = parseInt(fields[9 + fog]) || 0;
                     
                     if (careerData[key]?.type === 'skater') {
                       console.log(`🔄 Converting ${name} from skater to goalie`);
@@ -3055,7 +3086,9 @@
                   }} />
                   {/* Number — Jersey M54 with team colors + offset shadow */}
                   {(() => {
-                    const { fill, outline } = getJerseyColors(myTeamSetup.colors.primary, myTeamSetup.colors.secondary);
+                    const { fill: baseFill, outline: baseOutline } = getJerseyColors(myTeamSetup.colors.primary, myTeamSetup.colors.secondary, myTeamSetup.colors.jerseyFill, myTeamSetup.colors.jerseyOutline);
+                    const fill = jerseySwapped ? baseOutline : baseFill;
+                    const outline = jerseySwapped ? baseFill : baseOutline;
                     const numStr = String(player.number || '');
                     const isDouble = numStr.length >= 2;
                     const wideWith4 = isDouble && numStr.includes('4') && /[234568904]/.test(numStr.replace('4', ''));
@@ -3184,7 +3217,7 @@
                         whiteSpace: 'nowrap',
                         overflow: 'hidden'
                       }}>
-                        <span>{getSeasonYears().season1}: GP{stats.gp}</span>
+                        <span>{getSeasonYears().season1}: GP {stats.gp}</span>
                         <span>Pts.{stats.g}-{stats.a}--{stats.pts}</span>
                         <span style={{ visibility: showPlusMinus ? 'visible' : 'hidden' }}>+/- {formatPlusMinus(stats.plusMinus)}</span>
                       </div>
@@ -3214,7 +3247,7 @@
                         whiteSpace: 'nowrap',
                         overflow: 'hidden'
                       }}>
-                        <span>Career: GP{careerStats.gp}</span>
+                        <span>Career: GP {careerStats.gp}</span>
                         <span>Pts.{careerStats.g}-{careerStats.a}--{careerStats.pts}</span>
                         <span style={{ visibility: showPlusMinus ? 'visible' : 'hidden' }}>+/- {formatPlusMinus(careerStats.plusMinus)}</span>
                       </div>
@@ -3444,9 +3477,9 @@
                         <div className="space-y-3">
                           <div>
                             <div className="flex items-center justify-between mb-1">
-                              <label className="text-sm font-semibold">{getSeasonYears().season1Full} Season Legacy Final Player Stats</label>
+                              <label className="text-sm font-semibold">{getSeasonYears().season1} Season Legacy Final Player Stats</label>
                               <button 
-                                onClick={() => openHelp('careerStats', getSeasonYears().season1Full)}
+                                onClick={() => openHelp('careerStats', getSeasonYears().season1)}
                                 className="text-blue-600 hover:text-blue-800 text-xs font-semibold"
                               >
                                 ❓ Help
@@ -3455,7 +3488,7 @@
                             <textarea
                               value={careerStatsImport.lastSeason}
                               onChange={(e) => setCareerStatsImport({...careerStatsImport, lastSeason: e.target.value})}
-                              placeholder={`Paste player stats from ${getSeasonYears().season1Full} season...`}
+                              placeholder={`Paste player stats from ${getSeasonYears().season1} season...`}
                               className="w-full border rounded px-3 py-2 font-mono text-xs"
                               rows="3"
                             />
@@ -3463,9 +3496,9 @@
                           
                           <div>
                             <div className="flex items-center justify-between mb-1">
-                              <label className="text-sm font-semibold">{getSeasonYears().season2Full} Season Legacy Final Player Stats</label>
+                              <label className="text-sm font-semibold">{getSeasonYears().season2} Season Legacy Final Player Stats</label>
                               <button 
-                                onClick={() => openHelp('careerStats', getSeasonYears().season2Full)}
+                                onClick={() => openHelp('careerStats', getSeasonYears().season2)}
                                 className="text-blue-600 hover:text-blue-800 text-xs font-semibold"
                               >
                                 ❓ Help
@@ -3474,7 +3507,7 @@
                             <textarea
                               value={careerStatsImport.twoSeasonsAgo}
                               onChange={(e) => setCareerStatsImport({...careerStatsImport, twoSeasonsAgo: e.target.value})}
-                              placeholder={`Paste player stats from ${getSeasonYears().season2Full} season...`}
+                              placeholder={`Paste player stats from ${getSeasonYears().season2} season...`}
                               className="w-full border rounded px-3 py-2 font-mono text-xs"
                               rows="3"
                             />
@@ -4569,7 +4602,32 @@
 
                 {/* Available Players */}
                 <div className="no-print bg-gray-100 rounded p-2 mb-1">
-                  <h2 className="text-sm font-bold mb-1">Available Players ({availablePlayers.length})</h2>
+                  <div className="no-print flex items-center gap-2 mb-1">
+                    <h2 className="text-sm font-bold">Available Players ({availablePlayers.length})</h2>
+                    {(() => {
+                      const { fill: btnFill, outline: btnOutline } = getJerseyColors(myTeamSetup.colors.primary, myTeamSetup.colors.secondary, myTeamSetup.colors.jerseyFill, myTeamSetup.colors.jerseyOutline);
+                      const bgColor = jerseySwapped ? btnFill : btnOutline;
+                      const textColor = jerseySwapped ? btnOutline : btnFill;
+                      return (
+                        <button
+                          onClick={toggleJerseySwap}
+                          style={{
+                            backgroundColor: bgColor,
+                            color: textColor,
+                            border: `2px solid ${textColor}`,
+                            fontSize: '10px',
+                            fontWeight: 'bold',
+                            padding: '2px 8px',
+                            borderRadius: '4px',
+                            cursor: 'pointer',
+                            whiteSpace: 'nowrap'
+                          }}
+                        >
+                          Swap Jersey # Color
+                        </button>
+                      );
+                    })()}
+                  </div>
                   <div className="grid grid-cols-5 gap-2">
                     {availablePlayers.map(player => (
                       <PlayerCard key={player.id} player={player} source={{ roster: true }} isPreview={true} />
